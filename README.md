@@ -152,20 +152,23 @@ In this testing we provide 10 images that can access by this [Link](https://driv
 And the result of testing images can be access by this [Link](https://drive.google.com/drive/folders/1X1oPvUbU5BzGRPiDy4nCyJvQwrOrIAy2?usp=drive_link).
 
 
-
 ### Deployment (Optional)
-Describe and show how you deploy this project (e.g., using Streamlit or Flask), if any.
+This project use Streamlit as a deployment method. 
 
 ## Supporting Documents
 ### Presentation Deck
 - Link: https://...
 
 ### Business Model Canvas
-Provide a screenshot of your Business Model Canvas (BMC). Give some explanations, if necessary.
+![BMC-Page-1](https://github.com/josh209062/NeuranTechno-SC5AI/assets/85721003/5908856c-dc49-410e-9413-f3cbab1205af)
+![BMC-Page-2](https://github.com/josh209062/NeuranTechno-SC5AI/assets/85721003/d0cfea7c-254b-4a66-bc9a-b61ee7dd460c)
+
 
 ### Short Video
-Provide a link to your short video, that should includes the project background and how it works.
-- Link: https://...
+
+Here is the link to the short video that include the project background and how it works.
+
+- Link: [Short Video](https://)
 
 ## References
 Provide all links that support this final project, i.e., papers, GitHub repositories, websites, etc.
