@@ -156,6 +156,22 @@ And the result of testing images can be access by this [Link](https://drive.goog
 
 In this testing there are two method, via google collab and via Deployment.
 
+1. Via Google Collab
+in this method data testing will download to google collab from google drive link and also with the best.pt
+
+
+https://github.com/josh209062/NeuranTechno-SC5AI/assets/85721003/b23e654f-4b9f-47b6-9092-71031b77871d
+
+
+2. Via Deployment
+
+In this method, we no longer need to upload our images to the application. Because 10 images of testing data have been included as sample data in the application. so we only need to choose sample_data as the input source.
+
+
+https://github.com/josh209062/NeuranTechno-SC5AI/assets/85721003/3f9459c4-8361-47ec-9f49-80ac747d66a8
+
+
+
 
 ### Deployment (Optional)
 This project use Streamlit as a deployment method. In this deployment there are 3 activity page:
