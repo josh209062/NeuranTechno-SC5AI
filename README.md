@@ -33,11 +33,21 @@ Milk is a drink that is liked by many people, from children to adults. Milk is a
 - requests>=2.23.0
 
 ### Environment
+🧿 Google Collab Environment
 | | |
 |---------|---------|
 | GPU | NVIDIA A100-SXM4-40GB|
 | ROM | 200 GB |
 | RAM | 40 GB |
+| OS | Microsoft Windows 10 |
+
+💻 Local Environment
+| | |
+|---------|---------|
+| CPU | AMD Ryzen 5 2500U |
+| GPU | AMD Radeon Vega 8 Mobile Graphics |
+| ROM | 256 GB |
+| RAM | 8 GB |
 | OS | Microsoft Windows 10 |
 
 ## Dataset
@@ -68,17 +78,80 @@ In this project we carried out several experiments and modifications using sever
 |-------|-------|-------|-------|-------|-------|-------|-------|-------| 
 | Custom Yolov5s | 300 |  0.01 | 32 | SGD | 0.65 | 0.807 | 0.765 | 0.631 |
 | MobileNet V3 | 300 | 0.01 | 32 | SGD | 0.577 | 0.699 | 0.691 | 0.57 |
+| VGG-16 | 300 | 0.01 | 32 | SGD | 0.699 | 0.731 | 0.802 | 0.689 |
 | **ResNet-50** | **100** | **0.01** | **32** | **SGD** | **0.734** | **0.776** | **0.823** | ***0.725** |
 
 #### 2. Ablation Study
+In this project we use the custom Yolov5 model using the architecture from Resnet50 which we got from [GitHub](https://github.com/WangRongsheng/BestYOLO). This repository provides a resnet50 model with the following architecture:
+```
+# Parameters
+nc: 2  # number of classes
+depth_multiple: 0.33  # model depth multiple
+width_multiple: 0.25  # layer channel multiple
+anchors:
+  - [10,13, 16,30, 33,23]  # P3/8
+  - [30,61, 62,45, 59,119]  # P4/16
+  - [116,90, 156,198, 373,326]  # P5/32
 
+# YOLOv5 v6.0 backbone
+backbone:
+  # [from, number, module, args]
+  [[-1, 1, resnet501, [512]],  # 0
+   [-1, 1, resnet502, [1024]],  # 1
+   [-1, 1, resnet503, [2048]],  # 2
+   [-1, 1, SPPF, [1024, 5]],  # 3
+  ]
+
+# YOLOv5 v6.0 head
+head:
+  [[-1, 1, Conv, [512, 1, 1]],
+   [-1, 1, nn.Upsample, [None, 2, 'nearest']],
+   [[-1, 1], 1, Concat, [1]],  # cat backbone P4
+   [-1, 3, C3, [512, False]],  # 7
+
+   [-1, 1, Conv, [256, 1, 1]],
+   [-1, 1, nn.Upsample, [None, 2, 'nearest']],
+   [[-1, 0], 1, Concat, [1]],  # cat backbone P3
+   [-1, 3, C3, [256, False]],  # 11 (P3/8-small)
+
+   [-1, 1, Conv, [256, 3, 2]],
+   [[-1, 7], 1, Concat, [1]],  # cat head P4
+   [-1, 3, C3, [512, False]],  # 14 (P4/16-medium)
+
+   [-1, 1, Conv, [512, 3, 2]],
+   [[-1, 3], 1, Concat, [1]],  # cat head P5
+   [-1, 3, C3, [1024, False]],  # 17 (P5/32-large)
+
+   [[11, 14, 17], 1, Detect, [nc, anchors]],  # Detect(P3, P4, P5)
+  ]
+```
+
+in our model we modify the **nc** from ```nc:2``` to ```nc: {num_classes}``` and add **SPP** module, **BottleneckCSP** at the end of the backbone.
+
+so the final backbone like this:
+```
+# YOLOv5 v6.0 backbone
+backbone:
+  # [from, number, module, args]
+  [[-1, 1, resnet501, [512]],  # 0
+   [-1, 1, resnet502, [1024]],  # 1
+   [-1, 1, resnet503, [2048]],  # 2
+   [-1, 1, SPPF, [1024, 5]],  # 5
+   [-1, 1, SPP, [1024, [5, 9, 13]]],
+   [-1, 3, BottleneckCSP, [1024, False]]
+  ]
+```
 
 #### 3. Training/Validation Curve
 ![Result Plot](https://github.com/josh209062/NeuranTechno-SC5AI/assets/85721003/01095fe3-3c96-43b4-a958-0ea1165f1750)
 In the training/validation curve above we can see that the model we built **fit** the dataset we created.
  
 ### Testing
-Show some implementations (demos) of this model. Show **at least 10 images** of how your model performs on the testing data.
+In this testing we provide 10 images that can access by this [Link](https://drive.google.com/drive/folders/1A880u-IJMFvRGYKjrh4ciLMAbN5d1Npr?usp=drive_link).
+The result of test images can be access by this [Link](https://drive.google.com/drive/folders/1X1oPvUbU5BzGRPiDy4nCyJvQwrOrIAy2?usp=drive_link).
+
+
+
 
 ### Deployment (Optional)
 Describe and show how you deploy this project (e.g., using Streamlit or Flask), if any.
