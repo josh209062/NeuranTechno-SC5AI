@@ -155,7 +155,35 @@ In this testing there are two method, via google collab and via Deployment.
 
 
 ### Deployment (Optional)
-This project use Streamlit as a deployment method. 
+This project use Streamlit as a deployment method. In this deployment there are 3 activity page:
+
+1. Home
+
+This page contains about, the name off app, main feature in this app, and team profiles.
+
+https://github.com/josh209062/NeuranTechno-SC5AI/assets/85721003/a8462b8c-84dd-4865-a860-eb3eef7a3d68
+
+
+
+2. Detect via Image
+
+In this page, user can choose to use a sample data (images that use in testing images) that provides in the deployment or user can uploud their own poto to the app. User can also use confidence level slidebar to adjust the confidence level dan user can choose to select the Custom Classes checkbox to specifies the product that they want to detect.
+
+
+https://github.com/josh209062/NeuranTechno-SC5AI/assets/85721003/8465762d-3e0f-448a-b2e3-2b240c505134
+
+
+
+
+3. Detect via Video
+
+In this page, user can choose to use a sample data that provides in the deployment or user can uploud their own video to the app. User can also use confidence level slidebar to adjust the confidence level dan user can choose to select the Custom Classes checkbox to specifies the product that they want to detect.
+
+
+
+https://github.com/josh209062/NeuranTechno-SC5AI/assets/85721003/3167d744-67cf-4461-ae7e-9c08d112e9d2
+
+
 
 ## Supporting Documents
 ### Presentation Deck
