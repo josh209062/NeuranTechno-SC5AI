@@ -68,6 +68,9 @@ The dataset we use in this project is images of Frisian flag dairy products with
 This dataset was taken directly at a retail store.
 - Link: [Dataset Roboflow](https://universe.roboflow.com/neurantechno-1yd1n/various-milk-types-detection/dataset/6)
 
+![Dataset on Robolfow](https://github.com/josh209062/NeuranTechno-SC5AI/assets/85721003/dd562301-f3d6-423d-8902-6b3c831f6e1c)
+
+
 ## Results
 ### Model Performance
 In this project we carried out several experiments and modifications using several models in yolov5, by changing the backbone architecture. After conducting a series of training data using the model we chose, we found that the Yolov5 model using the Resnet-50 architecture performed well using the dataset we had.
