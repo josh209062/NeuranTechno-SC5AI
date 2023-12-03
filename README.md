@@ -151,13 +151,15 @@ In this testing we provide 10 images that can access by this [Link](https://driv
 
 And the result of testing images can be access by this [Link](https://drive.google.com/drive/folders/1X1oPvUbU5BzGRPiDy4nCyJvQwrOrIAy2?usp=drive_link).
 
+In this testing there are two method, via google collab and via Deployment.
+
 
 ### Deployment (Optional)
 This project use Streamlit as a deployment method. 
 
 ## Supporting Documents
 ### Presentation Deck
-- Link: https://...
+- Link: [NeuranTechno Presentation Deck](https://www.canva.com/design/DAF1PIJbCaw/I5JWC0aE1o_J79IyuEIiow/edit?utm_content=DAF1PIJbCaw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ### Business Model Canvas
 ![BMC-Page-1](https://github.com/josh209062/NeuranTechno-SC5AI/assets/85721003/5908856c-dc49-410e-9413-f3cbab1205af)
@@ -172,9 +174,14 @@ Here is the link to the short video that include the project background and how 
 
 ## References
 Provide all links that support this final project, i.e., papers, GitHub repositories, websites, etc.
-- Link: https://...
-- Link: https://...
-- Link: https://...
+- Link: https://github.com/WangRongsheng/BestYOLO
+- Link: https://github.com/ultralytics/yolov5
+- Link: https://arxiv.org/pdf/2304.00501v1.pdf
+- Link: https://www.mdpi.com/1424-8220/22/2/464
+- Link: https://michaelohanu.medium.com/yolov5-tutorial-75207a19a3aa
+- Link: https://pytorch.org/vision/main/models/generated/torchvision.models.resnet50.html
+- Link: https://medium.com/analytics-vidhya/retail-store-item-detection-using-yolov5-7ba3ddd71b0c
+- Link: https://github.com/shayanalibhatti/Retail-Store-Item-Detection-using-YOLOv5
 
 ## Additional Comments
 Provide your team's additional comments or final remarks for this project. For example,
@@ -182,13 +189,6 @@ Provide your team's additional comments or final remarks for this project. For e
 2. ...
 3. ...
 
-## How to Cite
-If you find this project useful, we'd grateful if you cite this repository:
-```
-@article{
-...
-}
-```
 
 ## License
 For academic and non-commercial use only.
