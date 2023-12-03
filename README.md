@@ -148,8 +148,8 @@ In the training/validation curve above we can see that the model we built **fit*
  
 ### Testing
 In this testing we provide 10 images that can access by this [Link](https://drive.google.com/drive/folders/1A880u-IJMFvRGYKjrh4ciLMAbN5d1Npr?usp=drive_link).
-The result of test images can be access by this [Link](https://drive.google.com/drive/folders/1X1oPvUbU5BzGRPiDy4nCyJvQwrOrIAy2?usp=drive_link).
 
+And the result of testing images can be access by this [Link](https://drive.google.com/drive/folders/1X1oPvUbU5BzGRPiDy4nCyJvQwrOrIAy2?usp=drive_link).
 
 
 
