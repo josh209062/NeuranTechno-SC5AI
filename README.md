@@ -1,6 +1,8 @@
 # 🥛 Remilk Go: Various of milk Types Detection for Automated Smart Retail Monitoring System 🥛
 
 
+Alternatif Link for the notebook file if can't display in github:  [RemilkGO NeuranTechno.ipnyb](https://colab.research.google.com/drive/1cRe2lDpC4IMlc3vnJDZbVysqywdxrdML?usp=sharing)
+
 
 ## Project Description
 Milk is a drink that is liked by many people, from children to adults. Milk is available in all existing supermarkets and minimarkets. Currently, the distribution of supermarkets and minimarkets is very wide, where we can find them on almost every street. Of the many activities carried out in supermarkets and minimarkets, the one that is often carried out by sales or employees is checking the availability of goods in supermarkets or minimarkets, one of which is milk products. Checking the availability of a dairy product in supermarkets, minimarkets or shops is an activity that is often carried out. Where in this activity, errors often occur when checking the stock of a dairy product. Moreover, when there is too much stock of dairy products being checked, this can result in human error. Of course, this will have a direct impact on operational efficiency and income in supermarkets and minimarkets. Therefore, we need a program or application that utilizes computer vision, such as object detection, to automatically detect what milk products are available on a minimarket or supermarket shelf.
@@ -174,7 +176,10 @@ https://github.com/josh209062/NeuranTechno-SC5AI/assets/85721003/3f9459c4-8361-4
 
 
 ### Deployment (Optional)
-This project use Streamlit as a deployment method. In this deployment there are 3 activity page:
+This project use Streamlit as a deployment method. This deployment already deploy to Streamlit Community Cloud, so this app can run in multidevice everywhere and anytime. 
+Link: https://remilk-go.streamlit.app/
+
+In this deployment there are 3 activity page:
 
 1. Home
 
