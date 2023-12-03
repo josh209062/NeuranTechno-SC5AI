@@ -3,7 +3,9 @@
 
 
 ## Project Description
-Please describe your Startup Campus final project here. You may should your <b>model architecture</b> in JPEG or GIF.
+Milk is a drink that is liked by many people, from children to adults. Milk is available in all existing supermarkets and minimarkets. Currently, the distribution of supermarkets and minimarkets is very wide, where we can find them on almost every street. Of the many activities carried out in supermarkets and minimarkets, the one that is often carried out by sales or employees is checking the availability of goods in supermarkets or minimarkets, one of which is milk products. Checking the availability of a dairy product in supermarkets, minimarkets or shops is an activity that is often carried out. Where in this activity, errors often occur when checking the stock of a dairy product. Moreover, when there is too much stock of dairy products being checked, this can result in human error. Of course, this will have a direct impact on operational efficiency and income in supermarkets and minimarkets. Therefore, we need a program or application that utilizes computer vision, such as object detection, to automatically detect what milk products are available on a minimarket or supermarket shelf.
+
+
 
 ## Contributor
 | Full Name                   | Affiliation                          | Email                     | LinkedIn                                                          | Role        |
@@ -52,42 +54,28 @@ The dataset we use in this project is images of Frisian flag dairy products with
 - UHT LOw Fat Belgian Chocolate 225 ml
 - UHT Strawberry 225 ml
 - UHT Swiss Chocolate 946 ml
+
 This dataset was taken directly at a retail store.
-- Link: https://universe.roboflow.com/neurantechno-1yd1n/various-milk-types-detection/dataset/6
+- Link: [Dataset Roboflow](https://universe.roboflow.com/neurantechno-1yd1n/various-milk-types-detection/dataset/6)
 
 ## Results
 ### Model Performance
-Describe all results found in your final project experiments, including hyperparameters tuning and architecture modification performances. Put it into table format. Please show pictures (of model accuracy, loss, etc.) for more clarity.
+In this project we carried out several experiments and modifications using several models in yolov5, by changing the backbone architecture. After conducting a series of training data using the model we chose, we found that the Yolov5 model using the Resnet-50 architecture performed well using the dataset we had.
 
 #### 1. Metrics
-Inform your model validation performances, as follows:
-- For classification tasks, use **Precision and Recall**.
-- For object detection tasks, use **Precision and Recall**. Additionaly, you may also use **Intersection over Union (IoU)**.
-- For image retrieval tasks, use **Precision and Recall**.
-- For optical character recognition (OCR) tasks, use **Word Error Rate (WER) and Character Error Rate (CER)**.
-- For adversarial-based generative tasks, use **Peak Signal-to-Noise Ratio (PNSR)**. Additionally, for specific GAN tasks,
-  - For single-image super resolution (SISR) tasks, use **Structural Similarity Index Measure (SSIM)**.
-  - For conditional image-to-image translation tasks (e.g., Pix2Pix), use **Inception Score**.
 
-Feel free to adjust the columns in the table below.
-
-| model | epoch | learning_rate | batch_size | optimizer | val_loss | val_precision | val_recall | ... |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| vit_b_16 | 1000 |  0.0001 | 32 | Adam | 0.093 | 88.34% | 84.15% | ... |
-| vit_l_32 | 2500 | 0.00001 | 128 | SGD | 0.041 | 90.19% | 87.55% | ... |
-| ... | ... | ... | ... | ... | ... | ... | ... | ... | 
+| model | epoch | learning_rate | batch_size | optimizer | Precision | Recall | mAP50 | mAP50-95 |
+|-------|-------|-------|-------|-------|-------|-------|-------|-------| 
+| Custom Yolov5s | 300 |  0.01 | 32 | SGD | 0.65 | 0.807 | 0.765 | 0.631 |
+| MobileNet V3 | 300 | 0.01 | 32 | SGD | 0.577 | 0.699 | 0.691 | 0.57 |
+| **ResNet-50** | **100** | **0.01** | **32** | **SGD** | **0.734** | **0.776** | **0.823** | ***0.725** |
 
 #### 2. Ablation Study
-Any improvements or modifications of your base model, should be summarized in this table. Feel free to adjust the columns in the table below.
 
-| model | layer_A | layer_B | layer_C | ... | top1_acc | top5_acc |
-| --- | --- | --- | --- | --- | --- | --- |
-| vit_b_16 | Conv(3x3, 64) x2 | Conv(3x3, 512) x3 | Conv(1x1, 2048) x3 | ... | 77.43% | 80.08% |
-| vit_b_16 | Conv(3x3, 32) x3 | Conv(3x3, 128) x3 | Conv(1x1, 1028) x2 | ... | 72.11% | 76.84% |
-| ... | ... | ... | ... | ... | ... | ... |
 
 #### 3. Training/Validation Curve
-Insert an image regarding your training and evaluation performances (especially their losses). The aim is to assess whether your model is fit, overfit, or underfit.
+![Result Plot](https://github.com/josh209062/NeuranTechno-SC5AI/assets/85721003/01095fe3-3c96-43b4-a958-0ea1165f1750)
+In the training/validation curve above we can see that the model we built **fit** the dataset we created.
  
 ### Testing
 Show some implementations (demos) of this model. Show **at least 10 images** of how your model performs on the testing data.
