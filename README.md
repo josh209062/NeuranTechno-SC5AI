@@ -86,7 +86,7 @@ In this project we carried out several experiments and modifications using sever
 | Custom Yolov5s | 300 |  0.01 | 32 | SGD | 0.65 | 0.807 | 0.765 | 0.631 |
 | MobileNet V3 | 300 | 0.01 | 32 | SGD | 0.577 | 0.699 | 0.691 | 0.57 |
 | VGG-16 | 300 | 0.01 | 32 | SGD | 0.699 | 0.731 | 0.802 | 0.689 |
-| **ResNet-50** | **100** | **0.01** | **32** | **SGD** | **0.734** | **0.776** | **0.823** | ***0.725** |
+| **ResNet-50** | **100** | **0.01** | **32** | **SGD** | **0.734** | **0.776** | **0.823** | **0.725** |
 
 #### 2. Ablation Study
 In this project we use the custom Yolov5 model using the architecture from Resnet50 which we got from [GitHub](https://github.com/WangRongsheng/BestYOLO). This repository provides a resnet50 model with the following architecture:
