@@ -224,7 +224,7 @@ https://github.com/josh209062/NeuranTechno-SC5AI/assets/85721003/3167d744-67cf-4
 
 Here is the link to the short video that include the project background and how it works.
 
-- Link: [Short Video](https://)
+- Link: [Short Video]([https://](https://drive.google.com/drive/folders/1ekPFmvneDwfpwu6_oxxzwO4TR796C4sQ?usp=sharing))
 
 ## References
 Provide all links that support this final project, i.e., papers, GitHub repositories, websites, etc.
