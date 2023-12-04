@@ -19,7 +19,7 @@ Milk is a drink that is liked by many people, from children to adults. Milk is a
 | Dhea Amanda Ramadhan | Universitas Riau | dheadilla2002@gmail.com | [link](https://www.linkedin.com/in/dhea-amanda-ramadhan-b57b1725b/) | Team Member |
 | Moh. Darirul Anwar | Universitas Trunojoyo | mohdarirula99@gmail.com | [link](https://www.linkedin.com/in/moh-darirul-anwar-02b89b274/) | Team Member |
 | Nirmala Arumningtyas | Universitas PGRI Yogyakarta | nirmalaarumningtyas2@gmail.com | [link](https://www.linkedin.com/in/nirmala-arumningtyas-40571428b/) | Team Member |
-| Purnomo Hernaoli | Universitas Sebelas Maret | Purnomohernaoli021000@gmail.com | [link](https://www.linkedin.com/in/purnomo-hernaoli-68326a222/) | Team Member |
+| Purnomo Hernaoli | Universitas Sebelas Maret | purnomohernaoli021000@gmail.com | [link](https://www.linkedin.com/in/purnomo-hernaoli-68326a222/) | Team Member |
 | M. Haswin Anugrah Pratama | Startup Campus, AI Track | haswinpratama21@gmail.com | [link](https://www.linkedin.com/in/haswinpratama/) | Supervisor |
 
 ## Setup
