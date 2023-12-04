@@ -248,4 +248,4 @@ Provide your team's additional comments or final remarks for this project. For e
 For academic and non-commercial use only.
 
 ## Acknowledgement
-This project entitled <b>"YOUR PROJECT TITLE HERE"</b> is supported and funded by Startup Campus Indonesia and Indonesian Ministry of Education and Culture through the "**Kampus Merdeka: Magang dan Studi Independen Bersertifikasi (MSIB)**" program.
+This project entitled <b>"Remilk Go: Various of milk Types Detection for Automated Smart Retail Monitoring System"</b> is supported and funded by Startup Campus Indonesia and Indonesian Ministry of Education and Culture through the "**Kampus Merdeka: Magang dan Studi Independen Bersertifikasi (MSIB)**" program.
