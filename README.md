@@ -65,12 +65,12 @@ The dataset we use in this project is images of Frisian flag dairy products with
 - Susu bubuk kompleta vanilla
 - Susu kental manis cokelat 
 - UHT Full Cream 946 ml 
-- UHT LOw Fat Belgian Chocolate 225 ml
+- UHT Low Fat Belgian Chocolate 225 ml
 - UHT Strawberry 225 ml
 - UHT Swiss Chocolate 946 ml
 
 This dataset was taken directly at a retail store.
-- Link: [Dataset Roboflow](https://universe.roboflow.com/neurantechno-1yd1n/various-milk-types-detection/dataset/6)
+- Link: [Dataset Roboflow](https://universe.roboflow.com/neurantechno-1yd1n/various-milk-types-detection/dataset/23)
 
 ![Dataset on Robolfow](https://github.com/josh209062/NeuranTechno-SC5AI/assets/85721003/dd562301-f3d6-423d-8902-6b3c831f6e1c)
 
